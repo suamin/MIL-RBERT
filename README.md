@@ -1,6 +1,6 @@
 # UMLS-MEDLINE Biomedical Distant RE for Bag-level Multiple Instance Learning
 
-Code for the paper BioNLP 2020 paper *A Data-driven Approach for Noise Reduction in Distantly Supervised Biomedical Relation Extraction*.
+Code for the paper BioNLP 2020 paper *[A Data-driven Approach for Noise Reduction in Distantly Supervised Biomedical Relation Extraction](https://www.aclweb.org/anthology/2020.bionlp-1.20.pdf)*.
 
 ![Model Architecture](imgs/umls-baglevel-distanre-model-arch.png)
 
@@ -32,3 +32,26 @@ Run `python train.py`.
 
 #### Checkpoint
 Download the best model checkpoint [here](https://cloud.dfki.de/owncloud/index.php/s/9Coe2Hw6zBxjrJo).
+
+## Citation
+If you use this code for your research, please consider citing:
+
+```
+@inproceedings{amin-etal-2020-data,
+    title = "A Data-driven Approach for Noise Reduction in Distantly Supervised Biomedical Relation Extraction",
+    author = "Amin, Saadullah  and
+      Dunfield, Katherine Ann  and
+      Vechkaeva, Anna  and
+      Neumann, Guenter",
+    booktitle = "Proceedings of the 19th SIGBioMed Workshop on Biomedical Language Processing",
+    month = jul,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/2020.bionlp-1.20",
+    pages = "187--194"
+}
+```
+
+## Acknowledgements 
+We thank Qin Dai (<daiqin@ecei.tohoku.ac.jp>) for guiding us on steps to obtain the relevant triples data from the UMLS in private communication.
