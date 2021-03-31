@@ -15,6 +15,7 @@ Install the UMLS tools by following the steps [here](http://blog.appliedinformat
 
 ##### MEDLINE
 Download MEDLINE abstracts `medline_abs.txt` (~24.5GB) and place under `data/MEDLINE`.
+UPDATE: Please follow the discussion here: https://github.com/suamin/umls-medline-distant-re/issues/2
 
 ##### Data Creation
 1. From project base dir, call the script to process UMLS as: `python -m data_utils.process_umls`. This will create an object `data/umls_vocab.pkl`.
