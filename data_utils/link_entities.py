@@ -9,6 +9,8 @@ import pickle
 
 from flashtext import KeywordProcessor
 
+from data_utils.process_umls import UMLSVocab
+
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 logger = logging.getLogger(__name__)
 
@@ -80,7 +82,6 @@ def link_sentences(linker, sents_fname, output_fname):
 
 
 if __name__=="__main__":
-    with open(config.umls_vocab_file, "rb") as rf:
-        uv = pickle.load(rf)
-    linker = ExactEntityLinking(uv[2]["entity_text_to_cuis"].keys(), config.case_sensitive_linker)
+    uv = UMLSVocab.load(config.umls_vocab_file)
+    linker = ExactEntityLinking(uv.entity_text_to_cuis.keys(), config.case_sensitive_linker)
     link_sentences(linker, config.medline_unique_sents_file, config.medline_linked_sents_file)
