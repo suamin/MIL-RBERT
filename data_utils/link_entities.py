@@ -82,5 +82,5 @@ def link_sentences(linker, sents_fname, output_fname):
 if __name__=="__main__":
     with open(config.umls_vocab_file, "rb") as rf:
         uv = pickle.load(rf)
-    linker = ExactEntityLinking(uv.entity_text_to_cuis.keys(), config.case_sensitive_linker)
+    linker = ExactEntityLinking(uv[2]["entity_text_to_cuis"].keys(), config.case_sensitive_linker)
     link_sentences(linker, config.medline_unique_sents_file, config.medline_linked_sents_file)
