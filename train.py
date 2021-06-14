@@ -65,13 +65,18 @@ def set_seed():
         torch.cuda.manual_seed_all(seed)
 
 
+def add_logging_handlers(logger, dir_name):
+    log_file = os.path.join(dir_name, "run.log")
+    fh = logging.FileHandler(log_file)
+    fh.setFormatter(logging.Formatter(
+        '%(asctime)s - %(levelname)s - %(name)s -   %(message)s', '%m/%d/%Y %H:%M:%S'
+    ))
+    logger.addHandler(fh)
+
+
 class AverageMeter(object):
     """
     Computes and stores the average and current value of metrics.
-    
-    Taken from:
-    	https://github.com/thunlp/OpenNRE/blob/master/opennre/framework/utils.py
-    
     """
 
     def __init__(self):
@@ -487,6 +492,8 @@ def main():
     num_ents = len(read_entities(config.entities_file))
     model = BertForDistantRE(BertConfig.from_pretrained(config.pretrained_model_dir), num_labels, bag_attn=config.bag_attn)
     model.to(config.device)
+    
+    add_logging_handlers(logger, config.output_dir)
     
     # Training
     if config.do_train:
