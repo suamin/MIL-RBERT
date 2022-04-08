@@ -35,9 +35,10 @@ Run `python train.py`.
 Download the best model checkpoint [here](https://cloud.dfki.de/owncloud/index.php/s/9Coe2Hw6zBxjrJo).
 
 ## Citation
+
 If you use this code for your research, please consider citing:
 
-```
+```bibtex
 @inproceedings{amin-etal-2020-data,
     title = "A Data-driven Approach for Noise Reduction in Distantly Supervised Biomedical Relation Extraction",
     author = "Amin, Saadullah  and
@@ -51,6 +52,24 @@ If you use this code for your research, please consider citing:
     publisher = "Association for Computational Linguistics",
     url = "https://www.aclweb.org/anthology/2020.bionlp-1.20",
     pages = "187--194"
+}
+```
+
+**Update (08/04/2022)**: Please check our follow-up work on new Bio-DSRE benchmark using PubMed-SNOMED CT called MedDistant19:
+
+```bibtex
+@inproceedings{amin-etal-2022-meddistant19,
+    title = "MedDistant19: A Challenging Benchmark for Distantly Supervised Biomedical Relation Extraction",
+    author = "Amin, Saadullah and
+    Minervini, Pasquale and
+    Chang, David and
+    Neumann, Günter and 
+    Stenetorp, Pontus",
+    booktitle = "Proceedings of the 21st Workshop on Biomedical Language Processing",
+    month = may,
+    year = "2022",
+    address = "Online",
+    publisher = "Association for Computational Linguistics"
 }
 ```
 
