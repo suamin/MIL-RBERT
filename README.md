@@ -55,7 +55,7 @@ If you use this code for your research, please consider citing:
 }
 ```
 
-**Update (08/04/2022)**: Please check our follow-up work on new Bio-DSRE benchmark using PubMed-SNOMED CT called MedDistant19:
+**Update (08/04/2022)**: Please check our follow-up work on new Bio-DSRE benchmark using PubMed-SNOMED CT called [MedDistant19](https://github.com/suamin/MedDistant19):
 
 ```bibtex
 @inproceedings{amin-etal-2022-meddistant19,
