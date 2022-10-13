@@ -41,35 +41,31 @@ If you use this code for your research, please consider citing:
 ```bibtex
 @inproceedings{amin-etal-2020-data,
     title = "A Data-driven Approach for Noise Reduction in Distantly Supervised Biomedical Relation Extraction",
-    author = "Amin, Saadullah  and
-      Dunfield, Katherine Ann  and
-      Vechkaeva, Anna  and
-      Neumann, Guenter",
+    author = "Amin, Saadullah and Dunfield, Katherine Ann and Vechkaeva, Anna and Neumann, G{\"u}nter",
     booktitle = "Proceedings of the 19th SIGBioMed Workshop on Biomedical Language Processing",
     month = jul,
     year = "2020",
     address = "Online",
     publisher = "Association for Computational Linguistics",
-    url = "https://www.aclweb.org/anthology/2020.bionlp-1.20",
+    url = "https://aclanthology.org/2020.bionlp-1.20",
+    doi = "10.18653/v1/2020.bionlp-1.20",
     pages = "187--194"
 }
 ```
 
-**Update (08/04/2022)**: Please check our follow-up work on new Bio-DSRE benchmark using PubMed-SNOMED CT called [MedDistant19](https://github.com/suamin/MedDistant19):
+Also, check our follow up work introducing a new benchmark using PubMed abstracts and SNOMED CT knowledge base, [MedDistant19](https://github.com/suamin/MedDistant19):
 
 ```bibtex
 @inproceedings{amin-etal-2022-meddistant19,
-    title = "MedDistant19: A Challenging Benchmark for Distantly Supervised Biomedical Relation Extraction",
-    author = "Amin, Saadullah and
-    Minervini, Pasquale and
-    Chang, David and
-    Neumann, Günter and 
-    Stenetorp, Pontus",
-    booktitle = "Proceedings of the 21st Workshop on Biomedical Language Processing",
-    month = may,
+    title = "{M}ed{D}istant19: Towards an Accurate Benchmark for Broad-Coverage Biomedical Relation Extraction",
+    author = "Amin, Saadullah and Minervini, Pasquale and Chang, David and Stenetorp, Pontus and Neumann, G{\"u}nter",
+    booktitle = "Proceedings of the 29th International Conference on Computational Linguistics",
+    month = oct,
     year = "2022",
-    address = "Online",
-    publisher = "Association for Computational Linguistics"
+    address = "Gyeongju, Republic of Korea",
+    publisher = "International Committee on Computational Linguistics",
+    url = "https://aclanthology.org/2022.coling-1.198",
+    pages = "2259--2277",
 }
 ```
 
